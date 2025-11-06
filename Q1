@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+class rectangle{
+    public:
+    
+    float length;
+    float bredth;
+    rectangle(){
+        length= 1;
+        bredth=5;
+        
+        
+    }
+    rectangle(float length, float bredth){
+       this-> length= length;
+       this-> bredth= bredth;
+        
+    }
+    
+    void areaDisplay(){
+        float area= length*bredth;
+        cout<<"AREA: "<<area<<"  L: "<<length<<"   B: "<<bredth<<endl;;
+    }
+    
+};
+
+int main(){
+    rectangle r1;
+    r1.areaDisplay();
+    rectangle r2(5.2,6.4);
+    r2.areaDisplay();
+    
+    return 0;
+}
