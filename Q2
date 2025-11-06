@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+
+class complex{
+    float real;
+    float imag;
+    
+ public:
+ 
+   complex(){
+       real =0;
+       imag=0;
+   }
+   complex(float r){
+       real =r;
+       imag=0;
+   }
+   complex(float r, float i){
+       this-> real = r;
+       this-> imag = i;
+   }
+   void display(){
+       if (imag>=0){
+           cout<<real<<"+"<<imag<<"i"<<endl;}
+           
+           else {
+               cout<<real;
+           }
+       }
+};
+   
+    
+
+
+int main(){
+    complex c1;
+    c1.display();
+    
+    complex c2(3.4);
+    c2.display();
+    
+    complex c3(3.1, 5.6);
+    c3.display();
+    
+    return 0;
+}
