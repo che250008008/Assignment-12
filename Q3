@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class car{
+    public: 
+    string brand;
+    double price;
+    
+    car(string brand, double price){
+        this-> brand = brand;
+        this-> price = price;
+    }
+    
+    void details(){
+        cout<<"BRAND: "<<brand<<"  PRICE: $"<<price<<endl;
+    }
+};
+
+int main(){
+    car c1("Vockswagon", 34500);
+    c1.details();
+    car c2("ferrari", 99000);
+     c2.details();
+     
+     return 0;
+    
+}
